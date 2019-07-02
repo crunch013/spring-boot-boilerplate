@@ -34,3 +34,15 @@ spring-boot-boilerplate-{version}.jar (core will be named as parent)
     - tests
   - lombok
 ```
+
+### Build
+```
+mvn clean install
+```
+
+### Running
+From withing core folder
+```
+mvn package spring-boot:run
+```
+Application will start using Jetty on port **8080** and actuator on **8081**, both without context-path modifier (on root /)
